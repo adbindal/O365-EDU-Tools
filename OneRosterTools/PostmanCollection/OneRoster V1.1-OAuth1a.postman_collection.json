@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "be9d6aac-a69e-4112-8a46-438b911e0b08",
+		"_postman_id": "6873b12b-d6f6-4561-828e-fa22d6f26da5",
 		"name": "OneRoster V1.1-OAuth1a",
 		"description": "OneRoster® API version 1.1 spec is availble here: \nhttps://www.imsglobal.org/oneroster-v11-final-specification",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
@@ -15,7 +15,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "caabe21d-c66c-49e2-91bf-7decc9273f5b",
+								"id": "d97e4848-a02d-4144-bbf5-ca42de93a948",
 								"exec": [
 									"tests[\"Get Schools\"] = responseCode.code === 200;",
 									"var data = JSON.parse(responseBody);",
@@ -51,7 +51,6 @@
 								"value": "application/json"
 							}
 						],
-						"body": {},
 						"url": {
 							"raw": "{{OneRosterHost}}/ims/oneroster/v1p1/schools?offset=0&limit=100&filter=status='active'",
 							"host": [
@@ -90,7 +89,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "3a8baee6-9e96-4de4-9cca-21d328886665",
+								"id": "cf27e668-9d02-4688-afba-4aef467686ed",
 								"exec": [
 									"tests[\"Get Classes\"] = responseCode.code === 200;",
 									"var data = JSON.parse(responseBody);",
@@ -117,7 +116,6 @@
 								"value": "application/json"
 							}
 						],
-						"body": {},
 						"url": {
 							"raw": "{{OneRosterHost}}/ims/oneroster/v1p1/classes?offset=0&limit=100&filter=status='active'",
 							"host": [
@@ -156,7 +154,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "a05bbb66-be64-4261-92d8-b9f2b5222bf8",
+								"id": "23c018af-ca3b-46ee-90d1-062d0a60b3d5",
 								"exec": [
 									"tests[\"Get Students\"] = responseCode.code === 200;",
 									"var data = JSON.parse(responseBody);",
@@ -192,7 +190,6 @@
 								"value": "application/json"
 							}
 						],
-						"body": {},
 						"url": {
 							"raw": "{{OneRosterHost}}/ims/oneroster/v1p1/students?offset=0&limit=100",
 							"host": [
@@ -227,7 +224,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "bc157692-107c-413e-9ad6-a8ff7ccbbeb0",
+								"id": "339ede44-7e5e-4d6c-b391-57e5ffa4f0e5",
 								"exec": [
 									"tests[\"Get Teachers\"] = responseCode.code === 200;",
 									"var data = JSON.parse(responseBody);",
@@ -263,7 +260,6 @@
 								"value": "application/json"
 							}
 						],
-						"body": {},
 						"url": {
 							"raw": "{{OneRosterHost}}/ims/oneroster/v1p1/teachers?offset=0&limit=100&filter=status='active'",
 							"host": [
@@ -303,7 +299,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "1d063039-0d8d-492f-bca2-8756cc36c08c",
+								"id": "8f489f5c-8eb2-4631-ba2a-5e03f56659fb",
 								"exec": [
 									"tests[\"Get Student Enrollments\"] = responseCode.code === 200;"
 								],
@@ -319,7 +315,6 @@
 								"value": "application/json"
 							}
 						],
-						"body": {},
 						"url": {
 							"raw": "{{OneRosterHost}}/ims/oneroster/v1p1/schools/{{school_id}}/enrollments?offset=0&limit=100&filter=role='student'",
 							"host": [
@@ -361,7 +356,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "1d063039-0d8d-492f-bca2-8756cc36c08c",
+								"id": "a75c6fa9-e2ab-4b62-b4e7-a436047bed1e",
 								"exec": [
 									"tests[\"Get Teacher Enrollments\"] = responseCode.code === 200;"
 								],
@@ -377,7 +372,6 @@
 								"value": "application/json"
 							}
 						],
-						"body": {},
 						"url": {
 							"raw": "{{OneRosterHost}}/ims/oneroster/v1p1/schools/{{school_id}}/enrollments?offset=0&limit=100&filter=role='teacher'",
 							"host": [
@@ -419,7 +413,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "af65a0c6-66d1-499f-af02-b813724afca7",
+								"id": "5a2ea36a-94a8-49ea-8c92-770a722ec7a3",
 								"exec": [
 									"tests[\"Get Academic Sessions\"] = responseCode.code === 200;"
 								],
@@ -435,7 +429,6 @@
 								"value": "application/json"
 							}
 						],
-						"body": {},
 						"url": {
 							"raw": "{{OneRosterHost}}/ims/oneroster/v1p1/academicSessions?offset=0&limit=100",
 							"host": [
@@ -476,7 +469,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "caabe21d-c66c-49e2-91bf-7decc9273f5b",
+								"id": "dcde15e8-5caf-4237-9dda-84a6292a3879",
 								"exec": [
 									"tests[\"Get active schools delta\"] = responseCode.code === 200;",
 									"",
@@ -513,7 +506,6 @@
 								"value": "application/json"
 							}
 						],
-						"body": {},
 						"url": {
 							"raw": "{{OneRosterHost}}/ims/oneroster/v1p1/schools?offset=0&limit=100&filter=status='active' AND dateLastModified>'2016-01-01T01:01:01.111Z'",
 							"host": [
@@ -553,7 +545,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "3a8baee6-9e96-4de4-9cca-21d328886665",
+								"id": "f261e93e-9f7c-4b76-b587-3ef9408a9aaa",
 								"exec": [
 									"tests[\"Get Active Classes Delta\"] = responseCode.code === 200;",
 									"var data = JSON.parse(responseBody);",
@@ -580,7 +572,6 @@
 								"value": "application/json"
 							}
 						],
-						"body": {},
 						"url": {
 							"raw": "{{OneRosterHost}}/ims/oneroster/v1p1/classes?offset=0&limit=100&filter=status='active' AND dateLastModified>'2016-01-01T01:01:01.111Z'",
 							"host": [
@@ -620,7 +611,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "a05bbb66-be64-4261-92d8-b9f2b5222bf8",
+								"id": "cd26675b-0e20-451a-8de8-dc3d4ffb5a0b",
 								"exec": [
 									"tests[\"Get Active Students Delta\"] = responseCode.code === 200;",
 									"",
@@ -657,7 +648,6 @@
 								"value": "application/json"
 							}
 						],
-						"body": {},
 						"url": {
 							"raw": "{{OneRosterHost}}/ims/oneroster/v1p1/students?offset=0&limit=100&filter=status='active' AND dateLastModified>'2016-01-01T01:01:01.111Z'",
 							"host": [
@@ -697,7 +687,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "bc157692-107c-413e-9ad6-a8ff7ccbbeb0",
+								"id": "0fae38e5-8b35-4ca8-90f9-537ed90a2f00",
 								"exec": [
 									"tests[\"Get Active Teachers Delta\"] = responseCode.code === 200;",
 									"",
@@ -734,7 +724,6 @@
 								"value": "application/json"
 							}
 						],
-						"body": {},
 						"url": {
 							"raw": "{{OneRosterHost}}/ims/oneroster/v1p1/teachers?offset=0&limit=100&filter=status='active'",
 							"host": [
@@ -774,7 +763,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "1d063039-0d8d-492f-bca2-8756cc36c08c",
+								"id": "9fafc5c7-a9f0-4d2f-a66c-620fa10a24ea",
 								"exec": [
 									"tests[\"Get Student Enrollments Delta\"] = responseCode.code === 200;"
 								],
@@ -790,7 +779,6 @@
 								"value": "application/json"
 							}
 						],
-						"body": {},
 						"url": {
 							"raw": "{{OneRosterHost}}/ims/oneroster/v1p1/schools/{{school_id}}/enrollments?offset=0&limit=100&filter=role='student' AND dateLastModified>'2016-01-01T01:01:01.111Z'",
 							"host": [
@@ -832,7 +820,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "1d063039-0d8d-492f-bca2-8756cc36c08c",
+								"id": "c3e5eb30-c30b-422d-a3c7-8b8b3cbf4b8a",
 								"exec": [
 									"tests[\"Get Teacher Enrollments Delta\"] = responseCode.code === 200;"
 								],
@@ -848,7 +836,6 @@
 								"value": "application/json"
 							}
 						],
-						"body": {},
 						"url": {
 							"raw": "{{OneRosterHost}}/ims/oneroster/v1p1/schools/{{school_id}}/enrollments?offset=0&limit=100&filter=role='teacher' AND dateLastModified>'2016-01-01T01:01:01.111Z'",
 							"host": [
@@ -890,7 +877,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "da4daa74-78b8-4cbf-994a-49037a3b66b7",
+								"id": "c277423f-d2a2-404e-abe9-86ecfa7c730c",
 								"exec": [
 									"tests[\"Get School by ID\"] = responseCode.code === 200;"
 								],
@@ -906,7 +893,6 @@
 								"value": "application/json"
 							}
 						],
-						"body": {},
 						"url": {
 							"raw": "{{OneRosterHost}}/ims/oneroster/v1p1/schools/{{school_id}}",
 							"host": [
@@ -930,7 +916,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "d628ac07-fa53-4a3d-8f88-fe7772bddca1",
+								"id": "3a9208ca-13b1-45e9-beda-014b27c2be67",
 								"exec": [
 									"tests[\"Get Class by ID\"] = responseCode.code === 200;"
 								],
@@ -946,7 +932,6 @@
 								"value": "application/json"
 							}
 						],
-						"body": {},
 						"url": {
 							"raw": "{{OneRosterHost}}/ims/oneroster/v1p1/classes/{{class_id}}",
 							"host": [
@@ -970,7 +955,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "621bb0f6-8a44-4003-894c-463fb686e6d3",
+								"id": "4227f927-d7ef-46ea-9cb4-629c657acc05",
 								"exec": [
 									"tests[\"Get Student by ID\"] = responseCode.code === 200;"
 								],
@@ -986,7 +971,6 @@
 								"value": "application/json"
 							}
 						],
-						"body": {},
 						"url": {
 							"raw": "{{OneRosterHost}}/ims/oneroster/v1p1/students/{{student_id}}",
 							"host": [
@@ -1010,7 +994,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "bfe2c5d4-0467-441f-8467-b5b4f094ff0d",
+								"id": "2a1c1d97-8c49-49d1-ad0f-090464d49e95",
 								"exec": [
 									"tests[\"Get Teacher by ID\"] = responseCode.code === 200;"
 								],
@@ -1026,7 +1010,6 @@
 								"value": "application/json"
 							}
 						],
-						"body": {},
 						"url": {
 							"raw": "{{OneRosterHost}}/ims/oneroster/v1p1/teachers/{{teacher_id}}",
 							"host": [
@@ -1044,7 +1027,8 @@
 					},
 					"response": []
 				}
-			]
+			],
+			"protocolProfileBehavior": {}
 		},
 		{
 			"name": "APIs used for Debugging",
@@ -1059,7 +1043,6 @@
 								"value": "application/json"
 							}
 						],
-						"body": {},
 						"url": {
 							"raw": "{{OneRosterHost}}/ims/oneroster/v1p1/courses?offset=0&limit=100",
 							"host": [
@@ -1104,7 +1087,6 @@
 								"value": "application/json"
 							}
 						],
-						"body": {},
 						"url": {
 							"raw": "{{OneRosterHost}}/{{class_id}}/enrollments?filter=role='student' AND status='active'&offset=0&limit=100",
 							"host": [
@@ -1145,7 +1127,6 @@
 								"value": "application/json"
 							}
 						],
-						"body": {},
 						"url": {
 							"raw": "{{OneRosterHost}}/{{class_id}}/enrollments?filter=role='teacher' AND status='active'&offset=0&limit=100",
 							"host": [
@@ -1186,7 +1167,6 @@
 								"value": "application/json"
 							}
 						],
-						"body": {},
 						"url": {
 							"raw": "{{OneRosterHost}}/ims/oneroster/v1p1/students/{{student_id}}/classes?offset=0&limit=100",
 							"host": [
@@ -1227,7 +1207,6 @@
 								"value": "application/json"
 							}
 						],
-						"body": {},
 						"url": {
 							"raw": "{{OneRosterHost}}/ims/oneroster/v1p1/teachers/{{teacher_id}}/classes?offset=0&limit=100",
 							"host": [
@@ -1268,7 +1247,6 @@
 								"value": "application/json"
 							}
 						],
-						"body": {},
 						"url": {
 							"raw": "{{OneRosterHost}}/ims/oneroster/v1p1/users?filter=givenName='Smith' AND familyName='Azure'",
 							"host": [
@@ -1306,7 +1284,6 @@
 								"value": "application/json"
 							}
 						],
-						"body": {},
 						"url": {
 							"raw": "{{OneRosterHost}}/ims/oneroster/v1p1/users?filter=username='stud1' OR email~'stud1'",
 							"host": [
@@ -1339,7 +1316,7 @@
 				{
 					"listen": "prerequest",
 					"script": {
-						"id": "4b96751c-7d08-4d3d-a8b9-45d9326ef53f",
+						"id": "cd922a4d-0d1a-43e8-9112-47147f7cd235",
 						"type": "text/javascript",
 						"exec": [
 							""
@@ -1349,14 +1326,519 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "1ad3de83-97d1-4333-8e42-71ae383a12bf",
+						"id": "9ef71f12-5362-497d-88f4-ff169647d81d",
 						"type": "text/javascript",
 						"exec": [
 							""
 						]
 					}
 				}
-			]
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "APIs required for GradeSync",
+			"item": [
+				{
+					"name": "Get Teacher",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "339ede44-7e5e-4d6c-b391-57e5ffa4f0e5",
+								"exec": [
+									"tests[\"Get Teacher from Email\"] = responseCode.code === 200;",
+									"var data = JSON.parse(responseBody);",
+									"if(responseCode.code === 200)",
+									"{",
+									"    tests[\"Parse Teacher ID\"] = false;",
+									"    if (data.teachers)",
+									"    {",
+									"        pm.environment.set(\"teacher_id\", data.teachers[0].sourcedId);",
+									"        console.log(\"Teacher ID set to: \" + pm.variables.get(\"teacher_id\"));",
+									"        tests[\"Parse Teacher ID\"] = true;",
+									"    }",
+									"    else if (data.users)",
+									"    {",
+									"        pm.environment.set(\"teacher_id\", data.users[0].sourcedId);",
+									"        console.log(\"Teacher ID set to: \" + pm.variables.get(\"teacher_id\"));",
+									"        tests[\"Parse Teacher ID\"] = true;",
+									"    }",
+									"}"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{OneRosterHost}}/ims/oneroster/v1p1/teachers?filter=email='{{TeacherEmailAddress}}'",
+							"host": [
+								"{{OneRosterHost}}"
+							],
+							"path": [
+								"ims",
+								"oneroster",
+								"v1p1",
+								"teachers"
+							],
+							"query": [
+								{
+									"key": "filter",
+									"value": "email='{{TeacherEmailAddress}}'"
+								}
+							]
+						},
+						"description": "Gets a teacher based on their email."
+					},
+					"response": []
+				},
+				{
+					"name": "Get Classes For Teacher",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "cf27e668-9d02-4688-afba-4aef467686ed",
+								"exec": [
+									"tests[\"Get Classes for Teacher\"] = responseCode.code === 200;",
+									"",
+									"var data = JSON.parse(responseBody);",
+									"if(responseCode.code === 200)",
+									"{",
+									"    tests[\"Parse Class ID\"] = false;",
+									"    if(data.classes)",
+									"    {",
+									"        pm.environment.set(\"class_id\", data.classes[0].sourcedId);",
+									"        console.log(\"Class ID set to: \" + pm.variables.get(\"class_id\"));        ",
+									"        tests[\"Parse Class ID\"] = true;",
+									"    }",
+									"}"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{OneRosterHost}}/ims/oneroster/v1p1/teachers/{{teacher_id}}/classes",
+							"host": [
+								"{{OneRosterHost}}"
+							],
+							"path": [
+								"ims",
+								"oneroster",
+								"v1p1",
+								"teachers",
+								"{{teacher_id}}",
+								"classes"
+							]
+						},
+						"description": "Gets a page of classes for a given teacher id."
+					},
+					"response": []
+				},
+				{
+					"name": "Get Class For Teacher",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "cf27e668-9d02-4688-afba-4aef467686ed",
+								"exec": [
+									"tests[\"Get Class for Teacher\"] = responseCode.code === 200;",
+									"const jsonData = JSON.parse(responseBody);",
+									"",
+									"if (responseCode.code == 200)",
+									"{",
+									"    if (jsonData.classes)",
+									"    {",
+									"        const classId = pm.environment.get(\"class_id\");",
+									"        tests[\"Classes contain Class Id\"] = jsonData.classes[0].sourcedId === classId;",
+									"",
+									"        if (jsonData.classes[0].terms)",
+									"        {",
+									"            pm.environment.set(\"term_id\", jsonData.classes[0].terms[0].sourcedId);",
+									"            console.log(\"Term ID set to: \" + pm.variables.get(\"term_id\"));",
+									"            tests[\"Parse Term ID\"] = true;",
+									"        }",
+									"    }",
+									"}"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{OneRosterHost}}/ims/oneroster/v1p1/teachers/{{teacher_id}}/classes?filter=sourcedId='{{class_id}}'",
+							"host": [
+								"{{OneRosterHost}}"
+							],
+							"path": [
+								"ims",
+								"oneroster",
+								"v1p1",
+								"teachers",
+								"{{teacher_id}}",
+								"classes"
+							],
+							"query": [
+								{
+									"key": "filter",
+									"value": "sourcedId='{{class_id}}'"
+								}
+							]
+						},
+						"description": "Gets a specific class for a teacher based on class_id."
+					},
+					"response": []
+				},
+				{
+					"name": "Get Teachers For Class",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "cf27e668-9d02-4688-afba-4aef467686ed",
+								"exec": [
+									"tests[\"Get Teachers For Class\"] = responseCode.code === 200;",
+									"",
+									"const contains = (users, user_id) => users.map(user => user.sourcedId).includes(user_id);",
+									"pm.test(`Teachers contain Teacher Id`, function () {",
+									"    const jsonData = pm.response.json();",
+									"    const teacherId = pm.environment.get('teacher_id');",
+									"    pm.expect(contains(jsonData.users, teacherId)).to.be.true;",
+									"});",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{OneRosterHost}}/ims/oneroster/v1p1/classes/{{class_id}}/teachers",
+							"host": [
+								"{{OneRosterHost}}"
+							],
+							"path": [
+								"ims",
+								"oneroster",
+								"v1p1",
+								"classes",
+								"{{class_id}}",
+								"teachers"
+							]
+						},
+						"description": "Gets a page of teachers for a class_id"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Students For Class",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "cf27e668-9d02-4688-afba-4aef467686ed",
+								"exec": [
+									"tests[\"Get Students For Class\"] = responseCode.code === 200;\r",
+									"var data = JSON.parse(responseBody);\r",
+									"if(responseCode.code === 200)\r",
+									"{\r",
+									"    tests[\"Parse Student ID\"] = false;\r",
+									"    if (data.students)\r",
+									"    {\r",
+									"        pm.environment.set(\"student_id\", data.students[0].sourcedId);\r",
+									"        console.log(\"Student ID set to: \" + pm.variables.get(\"student_id\"));\r",
+									"        tests[\"Parse Student ID\"] = true;\r",
+									"    }\r",
+									"    else if (data.users)\r",
+									"    {\r",
+									"        pm.environment.set(\"student_id\", data.users[0].sourcedId);\r",
+									"        console.log(\"Student ID set to: \" + pm.variables.get(\"student_id\"));\r",
+									"        tests[\"Parse Student ID\"] = true;\r",
+									"    }\r",
+									"}"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{OneRosterHost}}/ims/oneroster/v1p1/classes/{{class_id}}/students",
+							"host": [
+								"{{OneRosterHost}}"
+							],
+							"path": [
+								"ims",
+								"oneroster",
+								"v1p1",
+								"classes",
+								"{{class_id}}",
+								"students"
+							]
+						},
+						"description": "Gets a page of teachers for a class_id"
+					},
+					"response": []
+				},
+				{
+					"name": "Get LineItems For Class",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "cf27e668-9d02-4688-afba-4aef467686ed",
+								"exec": [
+									"tests[\"Get LineItems For Class\"] = responseCode.code === 200;\r",
+									"var data = JSON.parse(responseBody);\r",
+									"\r",
+									"if(responseCode.code === 200)\r",
+									"{\r",
+									"    tests[\"Parse LineItem ID\"] = false;\r",
+									"    if (data.lineItems)\r",
+									"    {\r",
+									"        pm.environment.set(\"lineitem_id\", data.lineItems[0].sourcedId);\r",
+									"        console.log(\"LineItem ID set to: \" + pm.variables.get(\"lineitem_id\"));\r",
+									"        tests[\"Parse LineItem ID\"] = true;\r",
+									"    }\r",
+									"}"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{OneRosterHost}}/ims/oneroster/v1p1/classes/{{class_id}}/lineitems",
+							"host": [
+								"{{OneRosterHost}}"
+							],
+							"path": [
+								"ims",
+								"oneroster",
+								"v1p1",
+								"classes",
+								"{{class_id}}",
+								"lineitems"
+							]
+						},
+						"description": "Gets a page of lineitems for a class_id"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Term",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "339ede44-7e5e-4d6c-b391-57e5ffa4f0e5",
+								"exec": [
+									"tests[\"Get Term\"] = responseCode.code === 200;",
+									"",
+									"var jsonData = JSON.parse(responseBody);",
+									"if(responseCode.code === 200)",
+									"{",
+									"    tests[\"Parse Grading Period\"] = false;",
+									"    if (jsonData.academicSession)",
+									"    {",
+									"        const { status, startDate, endDate } = jsonData.academicSession;",
+									"        tests[\"Check Active Status\"] = (status === \"active\");",
+									"",
+									"        pm.environment.set(\"term_start_date\", startDate);",
+									"        console.log(\"Term Start Date set to: \" + pm.variables.get(\"term_start_date\"));",
+									"",
+									"        pm.environment.set(\"term_end_date\", endDate);",
+									"        console.log(\"Term End Date set to: \" + pm.variables.get(\"term_end_date\"));",
+									"",
+									"        tests[\"Parse Grading Period\"] = true;",
+									"    }",
+									"}"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{OneRosterHost}}/ims/oneroster/v1p1/terms/{{term_id}}",
+							"host": [
+								"{{OneRosterHost}}"
+							],
+							"path": [
+								"ims",
+								"oneroster",
+								"v1p1",
+								"terms",
+								"{{term_id}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Results For LineItem For Class",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "cf27e668-9d02-4688-afba-4aef467686ed",
+								"exec": [
+									"tests[\"Get LineItems For Class\"] = responseCode.code === 200;\r",
+									"var data = JSON.parse(responseBody);\r",
+									"\r",
+									"if(responseCode.code === 200)\r",
+									"{\r",
+									"    tests[\"Parse Result ID\"] = false;\r",
+									"    if (data.results)\r",
+									"    {\r",
+									"        pm.environment.set(\"result_id\", data.results[0].sourcedId);\r",
+									"        console.log(\"Result ID set to: \" + pm.variables.get(\"result_id\"));\r",
+									"        tests[\"Parse Result ID\"] = true;\r",
+									"    }\r",
+									"}"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{OneRosterHost}}/ims/oneroster/v1p1/classes/{{class_id}}/lineitems/{{lineitem_id}}/results",
+							"host": [
+								"{{OneRosterHost}}"
+							],
+							"path": [
+								"ims",
+								"oneroster",
+								"v1p1",
+								"classes",
+								"{{class_id}}",
+								"lineitems",
+								"{{lineitem_id}}",
+								"results"
+							]
+						},
+						"description": "Gets a page of results for a lineitem_id for a class_id"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Results For Student For Class",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "cf27e668-9d02-4688-afba-4aef467686ed",
+								"exec": [
+									"tests[\"Get LineItems For Class\"] = responseCode.code === 200;\r",
+									"var data = JSON.parse(responseBody);\r",
+									"\r",
+									"if(responseCode.code === 200)\r",
+									"{\r",
+									"    tests[\"Parse Result ID\"] = false;\r",
+									"    if (data.results)\r",
+									"    {\r",
+									"        pm.environment.set(\"result_id\", data.results[0].sourcedId);\r",
+									"        console.log(\"Result ID set to: \" + pm.variables.get(\"result_id\"));\r",
+									"        tests[\"Parse Result ID\"] = true;\r",
+									"    }\r",
+									"}"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{OneRosterHost}}/ims/oneroster/v1p1/classes/{{class_id}}/students/{{student_id}}/results",
+							"host": [
+								"{{OneRosterHost}}"
+							],
+							"path": [
+								"ims",
+								"oneroster",
+								"v1p1",
+								"classes",
+								"{{class_id}}",
+								"students",
+								"{{student_id}}",
+								"results"
+							]
+						},
+						"description": "Gets a page of results for a student_id for a class_id"
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
 		}
 	],
 	"auth": {
@@ -1398,7 +1880,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "98200562-bf2b-4a24-b118-5f5c84d9b65c",
+				"id": "78d24da4-cb34-481c-82a0-c6721371e990",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -1408,7 +1890,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "e18aefb8-4fa0-4abe-94d3-036da62e6c7a",
+				"id": "d9d723a5-1d4d-436a-9bca-437d0ee98c2c",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -1441,5 +1923,6 @@
 			"value": "",
 			"type": "string"
 		}
-	]
+	],
+	"protocolProfileBehavior": {}
 }
